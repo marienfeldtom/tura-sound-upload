@@ -1,4 +1,4 @@
-# TuRa Sound Upload
+# TuRa Sound Upload [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues) 
 
 Simple web platform to upload short mp3 files which will be stored and pulled by an app.
 
