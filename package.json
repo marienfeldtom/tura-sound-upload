@@ -1,0 +1,16 @@
+{
+  "name": "tura-sound-upload",
+  "version": "1.0.0",
+  "description": "TuRa Sound Upload",
+  "author": "Tom Marienfeld <marienfeldtom@googlemail.com> (https://marienfeld.me/)",
+  "license": "MIT",
+  "dependencies": {
+    "archiver": "^3.0.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "lowdb": "^1.0.0",
+    "mime": "^2.4.4",
+    "multer": "^1.4.2",
+    "swig": "^1.4.2"
+  }
+}

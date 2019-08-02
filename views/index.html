@@ -1,0 +1,251 @@
+<!--
+ =========================================================
+ * Material Kit - v2.0.5
+ =========================================================
+
+ * Product Page: https://www.creative-tim.com/product/material-kit
+ * Copyright 2019 Creative Tim (http://www.creative-tim.com)
+   Licensed under MIT (https://github.com/creativetimofficial/material-kit/blob/master/LICENSE.md)
+
+
+ =========================================================
+
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ 
+ <head>
+   <meta charset="utf-8" />
+   <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+   <link rel="icon" type="image/png" href="assets/img/favicon.png">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+   <title>
+     TuRa Sound Upload
+   </title>
+   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+   <!--     Fonts and icons     -->
+   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+   <!-- CSS Files -->
+   <link href="assets/css/material-kit.css?v=2.0.5" rel="stylesheet" />
+   <!-- CSS Just for demo purpose, don't include it in your project -->
+   <link href="assets/demo/demo.css" rel="stylesheet" />
+ 
+   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ 
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+ <style>
+ #bars {
+     height: 30px;
+     left: 50%;
+     margin: 0px 0 0 -20px;
+     position: relative;
+     top: 50%;
+     width: 40px;
+ }
+ 
+ .bar {
+    background:white;
+     bottom: 1px;
+     height: 3px;
+     position: absolute;
+     width: 3px;      
+     animation: sound 0ms -800ms linear infinite alternate;
+ }
+ 
+ @keyframes sound {
+     0% {
+        opacity: .35;
+         height: 3px; 
+     }
+     100% {
+         opacity: 1;       
+         height: 28px;        
+     }
+ }
+ 
+ .bar:nth-child(1)  { left: 1px; animation-duration: 474ms; }
+ .bar:nth-child(2)  { left: 5px; animation-duration: 433ms; }
+ .bar:nth-child(3)  { left: 9px; animation-duration: 407ms; }
+ .bar:nth-child(4)  { left: 13px; animation-duration: 458ms; }
+ .bar:nth-child(5)  { left: 17px; animation-duration: 400ms; }
+ .bar:nth-child(6)  { left: 21px; animation-duration: 427ms; }
+ .bar:nth-child(7)  { left: 25px; animation-duration: 441ms; }
+ .bar:nth-child(8)  { left: 29px; animation-duration: 419ms; }
+ .bar:nth-child(9)  { left: 33px; animation-duration: 487ms; }
+ .bar:nth-child(10) { left: 37px; animation-duration: 442ms; }​
+ 
+ 
+ 
+ 
+ 
+ #bg {
+   background-size: cover; 
+   background-position: top center;
+ }
+ 
+ .card-header {
+   border-radius: 6px !important;
+ }
+ </style>
+ 
+ </head>
+ 
+ <body class="login-page sidebar-collapse">
+ 
+   <div class="page-header header-filter" id="bg" style="background-image: url('https://lh3.googleusercontent.com/7obousQKVgN2Jnhbw1eN-vc4xUuHvDe1S8G8a0W3Zzy_v2Pl7VCy-wffSWMKmOoM-tDtpjY1o44pC88by3fycEAD3MRgsk5u2_8X_MEydt6xyv4NVUuKpIznraSAKsg9ZPD_KO_GO0woMg5YbF7RUqvrI26W4hjK55oecgZrjAkNw8KgBcf0DRmBoogLM9AQjxULxFOEp0wcZ1R_7jLC-BtrKUm9mehnhBQs1H6gKpqMR-9a1q7jHzmeoyoyN9hI-ERMn4JSXapc2qpv5sZbHUgT6TJxdtoy6QARzDtzpBTaP2tVtur3ZnQY0XGQIDynn1jRxxIi1ut5xSL0guyKM5RP8lmfsgOMANlcrRlJejcJu06BZVbE_Zie-4hPVS8grSTZnR7784mPg912bPrf_Bm-N7a_S20eswUcqyiTvUQdHVSuu3FUwWeyZPvPZ8sovLfrl616dpc_2PemybqbjNoAIUxXd4yShAMOo4SHinWq1asJiKEqAGn2itI4gm95TiZLMv5DcqmyoRYepKBWP65E75VWfZ02txgWyLHQnTmyZyX7Ob5kQ2rntazCKky1fLsMncpT2T44CX67v4GJV76SNgQqCbbo5CsS4KhPupCtBF6UzhALqgN6tlsNQHEHcih0-kZKlHo2Tvz13X5vDhAHOaNt_IgYO-6TgnoByDj4oeJyulMdoQKQdk6m9tdbHSGoA9fNd0TTvPblmVxClGPcQg=w1920-h844-no');">
+     <div class="container">
+       <div class="row">
+         <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+           <div class="card card-login">
+             <form class="form"  id="uploadForm"
+             enctype="multipart/form-data"
+             action="/upload"
+             method="post">
+               <div class="card-header card-header-success text-center">
+                 <h4 class="card-title">TuRa Sound Upload</h4>
+                 <div class="social-line">
+                    <div id='bars'>
+   <div class='bar'></div>
+   <div class='bar'></div>
+   <div class='bar'></div>
+   <div class='bar'></div>
+   <div class='bar'></div>
+   <div class='bar'></div>
+   <div class='bar'></div>
+   <div class='bar'></div>
+   <div class='bar'></div>
+   <div class='bar'></div>
+ </div>
+ 
+                   <br>
+                 </div>
+               </div>
+               <p class="description text-center">Die Datei sollte nicht länger als 8 Sekunden sein.
+               </p>
+               <div class="card-body">
+ 
+ 
+                 <div class="input-group">
+                   <div class="input-group-prepend">
+                     <span class="input-group-text">
+                       <i class="material-icons">face</i>
+                     </span>
+                   </div>
+                   <select class="form-control selectpicker" title="Name..." data-live-search="true" name="username" data-style="btn btn-link" id="exampleFormControlSelect1">
+                       <optgroup label="Damen"> 
+                         {% for item in spieler %}
+                         {% if item.mannschaft == "damen" %}
+                     <option data-content="{{item.anzeigename}}">{{item.username}}</option>
+                         {%endif%}
+                       {% endfor %}
+                       </optgroup>
+                       <optgroup label="Herren"> 
+                           {% for item in spieler %}
+                         {% if item.mannschaft == "herren" %}
+                       <option data-content="{{item.anzeigename}}">{{item.username}}</option>
+                         {%endif%}
+                       {% endfor %}
+                             </optgroup>
+                     </select>
+                       
+                 </div>
+               
+                 
+ 
+           
+ 
+ 
+                 <div class="input-group">
+                   <div class="input-group-prepend">
+                     <span class="input-group-text">
+                       <i class="material-icons">lock_outline</i>
+                     </span>
+                   </div>
+                   <input type="password" name="passwort" class="form-control" placeholder="Passwort...">
+                 </div>
+ 
+                 <div class="input-group">
+                   <div class="input-group-prepend">
+                     <span class="input-group-text">
+                       <i class="material-icons">file_copy</i>
+                     </span>
+                   </div>
+                   
+                 <div class="custom-file">
+     <input type="file" class="custom-file-input" name="mp3" accept=".mp3" id="customFile">
+     <label class="custom-file-label" style="white-space: nowrap; overflow: hidden;" for="customFile">MP3 auswählen</label>
+   </div>
+                 </div>
+ 
+ 
+ 
+ 
+               </div>
+               <div class="text-center">
+                 <input style="padding: 15px;"  type="submit" value="Hochladen" class="btn btn-primary btn-link btn-wd btn-lg">
+                 
+                 <div id="status" class="alert alert-primary" role="alert">
+                   </div>
+               </div>
+             </form>
+           </div>
+         </div>
+       </div>
+     </div>
+ 
+   </div>
+   <!--   Core JS Files   -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.js" integrity="sha256-LddDRH6iUPqbp3x9ClMVGkVEvZTrIemrY613shJ/Jgw=" crossorigin="anonymous"></script>
+   <script src="assets/js/core/popper.min.js" type="text/javascript"></script>
+   <script src="assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+   <script src="assets/js/plugins/moment.min.js"></script>
+   <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+   <script src="assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+   <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+   <script src="assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+   <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+   <script src="assets/js/material-kit.js?v=2.0.5" type="text/javascript"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+   <script>
+ // Add the following code if you want the name of the file appear on select
+ $(".custom-file-input").on("change", function() {
+   var fileName = $(this).val().split("\\").pop();
+   $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+ });
+ </script>
+ 
+ <script>
+ 
+ 
+   $(document).ready(function() {
+     $('#status').hide();
+      $('#uploadForm').submit(function() {
+         $("#status").empty().text("Datei wird hochgeladen...");
+         $(this).ajaxSubmit({
+ 
+             error: function(xhr) {
+               $('#status').show();
+               console.log(xhr);
+               $("#status").empty().text(xhr.responseText);
+         status('Error: ' + xhr.responseText);
+             },
+ 
+             success: function(response) {
+               $('#status').show();
+               $('#uploadForm')[0].reset();
+                 $("#status").empty().text("Datei wurde erfolgreich hochgeladen...");
+             }
+     });
+         //Very important line, it disable the page refresh.
+     return false;
+     });    
+ });
+ </script>
+ </body>
+ 
+ </html>
+ 
