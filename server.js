@@ -3,7 +3,6 @@ var multer = require('multer');
 var app = express();
 const crypto = require('crypto');
 var path = require('path');
-const accepted_extensions = ['mp3'];
 const low = require('lowdb')
 const FileSync = require('lowdb/adapters/FileSync')
 var swig  = require('swig');
@@ -73,11 +72,10 @@ app.get('/', function (req, res) {
 
 app.post('/upload', function (req, res) {
     db.read();
+   
     upload(req, res, function (err) {
-        if (!req.file) {
-            return res.status(500).send("Bitte wähle eine Datei aus!");
-        }
         if (err) return res.status(500).send(err.message);
+        if (!req.file) return res.status(500).send("Bitte wähle eine MP3 aus!");
         console.log(req.body.username);
         var spieler = db.get('spieler').find({ username: req.body.username }).value();
         console.log(spieler);
