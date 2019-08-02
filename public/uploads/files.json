@@ -1,28 +1,3 @@
 {
-  "spieler": [
-    {
-      "username": "najakleinschmidt",
-      "anzeigename": "Naja",
-      "version": 1,
-      "mannschaft": "damen"
-    },
-    {
-      "username": "valescahipler",
-      "anzeigename": "Valle",
-      "version": 1,
-      "mannschaft": "damen"
-    },
-    {
-      "username": "tommarienfeld",
-      "anzeigename": "Tom",
-      "version": 6,
-      "mannschaft": "herren"
-    },
-    {
-      "username": "lassemuth",
-      "anzeigename": "Lasse M.",
-      "version": 2,
-      "mannschaft": "herren"
-    }
-  ]
+  "spieler": []
 }

@@ -4,5 +4,3 @@ node_modules/
 #MP3 Dateien
 public/uploads/*.mp3
 
-#DB mit Passwörtern
-db.json
