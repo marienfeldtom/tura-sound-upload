@@ -4,3 +4,8 @@ node_modules/
 #MP3 Dateien
 public/uploads/*.mp3
 
+#DB mit Passwörtern
+db.json
+
+#DB für Dateien
+public/uploads/files.json
