@@ -96,6 +96,6 @@ app.post('/upload', function (req, res) {
     });
 });
 
-app.listen(3000, function () {
+app.listen(3000,'0.0.0.0', function () {
     console.log("Working on port 3000");
 });
