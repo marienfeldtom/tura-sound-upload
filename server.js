@@ -19,8 +19,14 @@ const db2 = low(adapter2)
 function isValid(fields) {
     if (db.get('spieler')
         .find({ username: fields.username })
-        .value().passwort == fields.passwort) {
-        return true;
+        .value()) {
+            if(db.get('spieler')
+            .find({ username: fields.username })
+            .value().passwort == fields.passwort) {
+                return true;
+            } else {
+                return false;
+            }
     } else {
         return false;
     }
@@ -49,9 +55,8 @@ var storage = multer.diskStorage({
 var upload = multer({
     storage: storage,
     fileFilter: function (req, file, cb) {
-        console.log("hi");
         if (!isValid(req.body)) {
-            return cb(new Error('Falsches Passwort'));
+            return cb(new Error('Falscher Nutzer oder Passwort!'));
         }
         if (file.mimetype !== 'audio/mp3') {
             return cb(new Error('Falsches Format'));
@@ -85,17 +90,13 @@ app.post('/upload', function (req, res) {
     upload(req, res, function (err) {
         if (err) return res.status(500).send(err.message);
         if (!req.file) return res.status(500).send("Bitte wähle eine MP3 aus!");
-        console.log(req.body.username);
         var spieler = db.get('spieler').find({ username: req.body.username }).value();
-        console.log(spieler);
         var spieler2 = db2.get('spieler').find({ username: req.body.username }).value();
         if(!db2.get('spieler').find({ username: req.body.username }).value()) {
-            console.log("jop");
             db2.get('spieler')
             .push({ username: req.body.username, anzeigename: spieler.anzeigename, version: 1, damen: spieler.damen, herren: spieler.herren})
             .write()
         } else {
-            console.log("else");
             db2.find({ username: req.body.username })
             .assign({version: spieler2.version++})
             .write();
