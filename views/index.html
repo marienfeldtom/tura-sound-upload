@@ -140,18 +140,18 @@ content: "Durchsuchen" !important;
                    </div>
                    <select class="form-control selectpicker" title="Name..." data-live-search="true" name="username" data-style="btn btn-link" id="exampleFormControlSelect1">
                        <optgroup label="Damen"> 
-                         {% for item in spieler %}
-                         {% if item.mannschaft == "damen" %}
-                     <option data-content="{{item.anzeigename}}">{{item.username}}</option>
-                         {%endif%}
-                       {% endfor %}
+                        {{#spieler}}
+                        {{#damen}}
+                     <option data-content="{{anzeigename}}">{{username}}</option>
+                        {{/damen}}
+                         {{/spieler}}
                        </optgroup>
                        <optgroup label="Herren"> 
-                           {% for item in spieler %}
-                         {% if item.mannschaft == "herren" %}
-                       <option data-content="{{item.anzeigename}}">{{item.username}}</option>
-                         {%endif%}
-                       {% endfor %}
+                        {{#spieler}}
+                        {{#herren}}
+                       <option data-content="{{anzeigename}}">{{username}}</option>
+                       {{/herren}}
+                       {{/spieler}}
                              </optgroup>
                      </select>
                        

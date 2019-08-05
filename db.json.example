@@ -1,12 +1,11 @@
-//File with user data for login
-
 {
     "spieler": [
       {
-        "username": "johndoe",  // Username
-        "anzeigename": "john",  //Anzeigename
-        "passwort": "efbAX6PvA7", //Passwort
-        "mannschaft": "herren" //herren oder damen
+        "username": "johndoe",
+        "anzeigename": "john",
+        "passwort": "efbAX6PvA7",
+        "damen": true,
+      "herren": false
       }
     ]
   }

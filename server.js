@@ -5,10 +5,11 @@ const crypto = require('crypto');
 var path = require('path');
 const low = require('lowdb')
 const FileSync = require('lowdb/adapters/FileSync')
-var swig  = require('swig');
 var cors = require('cors');
 app.use(express.json())
 app.use(cors());
+
+var mustacheExpress = require('mustache-express');
 
 const adapter = new FileSync('db.json')
 const db = low(adapter)
@@ -61,13 +62,16 @@ var upload = multer({
 
 
 app.use(express.static('public'));
-app.engine('html',swig.renderFile);
+app.engine('html', mustacheExpress());
+app.set('view engine', 'html');
+app.set('views', __dirname + '/views');
+
     app.set('view engine', 'html');
 
 app.get('/', function (req, res) {
    // res.sendFile(__dirname + "/index.html");
    db.read();
-   res.render('index', {spieler: db.get('spieler').value()});
+   res.render('index.html', {"spieler": db.get('spieler').value()});
 });
 
 
@@ -86,8 +90,9 @@ app.post('/upload', function (req, res) {
         console.log(spieler);
         var spieler2 = db2.get('spieler').find({ username: req.body.username }).value();
         if(!db2.get('spieler').find({ username: req.body.username }).value()) {
+            console.log("jop");
             db2.get('spieler')
-            .push({ username: req.body.username, anzeigename: spieler.anzeigename, version: 1, mannschaft: spieler.mannschaft})
+            .push({ username: req.body.username, anzeigename: spieler.anzeigename, version: 1, damen: spieler.damen, herren: spieler.herren})
             .write()
         } else {
             console.log("else");
