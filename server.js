@@ -6,12 +6,12 @@ var path = require('path');
 const low = require('lowdb')
 const FileSync = require('lowdb/adapters/FileSync')
 var swig  = require('swig');
-
+var cors = require('cors');
 app.use(express.json())
+app.use(cors());
 
 const adapter = new FileSync('db.json')
 const db = low(adapter)
-
 const adapter2 = new FileSync('public/uploads/files.json')
 const db2 = low(adapter2)
 
@@ -68,6 +68,11 @@ app.get('/', function (req, res) {
    // res.sendFile(__dirname + "/index.html");
    db.read();
    res.render('index', {spieler: db.get('spieler').value()});
+});
+
+
+  app.get('/info', function (req, res) {
+      res.json(db2.get('spieler').sortBy('anzeigename').value());
 });
 
 app.post('/upload', function (req, res) {
