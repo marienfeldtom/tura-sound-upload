@@ -1,0 +1,364 @@
+{
+  "spieler": [
+    {
+      "username": "annekarstens",
+      "anzeigename": "Anne",
+      "herren": false,
+      "damen": true,
+      "passwort": "damen123",
+      "mannschaft": "damen",
+      "version": 1
+    },
+    {
+      "username": "jacquelinefrenssen",
+      "anzeigename": "Jacqueline",
+      "herren": false,
+      "damen": true,
+      "passwort": "damen123",
+      "mannschaft": "damen",
+      "version": 1
+    },
+    {
+      "username": "jessicagadermann",
+      "anzeigename": "Jessica",
+      "herren": false,
+      "damen": true,
+      "passwort": "damen123",
+      "mannschaft": "damen",
+      "version": 1
+    },
+    {
+      "username": "johannarohde",
+      "anzeigename": "Johanna",
+      "herren": false,
+      "damen": true,
+      "passwort": "damen123",
+      "mannschaft": "damen",
+      "version": 1
+    },
+    {
+      "username": "jokewollatz",
+      "anzeigename": "Joke",
+      "herren": false,
+      "damen": true,
+      "passwort": "damen123",
+      "mannschaft": "damen",
+      "version": 1
+    },
+    {
+      "username": "judithmanshardt",
+      "anzeigename": "Judith",
+      "herren": false,
+      "damen": true,
+      "passwort": "damen123",
+      "mannschaft": "damen",
+      "version": 1
+    },
+    {
+      "username": "julejungheinrich",
+      "anzeigename": "Jule",
+      "herren": false,
+      "damen": true,
+      "passwort": "damen123",
+      "mannschaft": "damen",
+      "version": 1
+    },
+    {
+      "username": "laraschulz",
+      "anzeigename": "Lara",
+      "herren": false,
+      "damen": true,
+      "passwort": "damen123",
+      "mannschaft": "damen",
+      "version": 1
+    },
+    {
+      "username": "laurasonnenfeld",
+      "anzeigename": "Laura",
+      "herren": false,
+      "damen": true,
+      "passwort": "damen123",
+      "mannschaft": "damen",
+      "version": 1
+    },
+    {
+      "username": "lenahuesmann",
+      "anzeigename": "Lena",
+      "herren": false,
+      "damen": true,
+      "passwort": "damen123",
+      "mannschaft": "damen",
+      "version": 1
+    },
+    {
+      "username": "levkehoffmann",
+      "anzeigename": "Levke",
+      "herren": false,
+      "damen": true,
+      "passwort": "damen123",
+      "mannschaft": "damen",
+      "version": 1
+    },
+    {
+      "username": "louisaheinitz",
+      "anzeigename": "Louisa",
+      "herren": false,
+      "damen": true,
+      "passwort": "damen123",
+      "mannschaft": "damen",
+      "version": 1
+    },
+    {
+      "username": "wischer",
+      "anzeigename": "Wischer",
+      "herren": true,
+      "damen": false,
+      "passwort": "herren123",
+      "mannschaft": "herren",
+      "version": 0
+    },
+    {
+      "username": "oleschmidt",
+      "anzeigename": "Ole",
+      "herren": true,
+      "damen": false,
+      "passwort": "herren123",
+      "mannschaft": "herren",
+      "version": 0
+    },
+    {
+      "username": "najakleinschmidt",
+      "anzeigename": "Naja",
+      "herren": false,
+      "damen": true,
+      "passwort": "damen123",
+      "mannschaft": "damen",
+      "version": 1
+    },
+    {
+      "username": "sarahjuergens",
+      "anzeigename": "Sarah",
+      "herren": false,
+      "damen": true,
+      "passwort": "damen123",
+      "mannschaft": "damen",
+      "version": 1
+    },
+    {
+      "username": "sophiespeidel",
+      "anzeigename": "Sophie",
+      "herren": false,
+      "damen": true,
+      "passwort": "damen123",
+      "mannschaft": "damen",
+      "version": 1
+    },
+    {
+      "username": "tabeastahl",
+      "anzeigename": "Tabea",
+      "herren": false,
+      "damen": true,
+      "passwort": "damen123",
+      "mannschaft": "damen",
+      "version": 1
+    },
+    {
+      "username": "valescahipler",
+      "anzeigename": "Valesca",
+      "herren": false,
+      "damen": true,
+      "passwort": "damen123",
+      "mannschaft": "damen",
+      "version": 1
+    },
+    {
+      "username": "vanessaharders",
+      "anzeigename": "Vanessa",
+      "herren": false,
+      "damen": true,
+      "passwort": "damen123",
+      "mannschaft": "damen",
+      "version": 1
+    },
+    {
+      "username": "laurasonnenfeld",
+      "anzeigename": "Laura",
+      "herren": false,
+      "damen": true,
+      "passwort": "damen123",
+      "mannschaft": "damen",
+      "version": 1
+    },
+    {
+      "username": "hannesbielfeldt",
+      "anzeigename": "Hannes",
+      "herren": true,
+      "damen": false,
+      "passwort": "herren123",
+      "mannschaft": "herren",
+      "version": 0
+    },
+    {
+      "username": "rufusreisenbuechler",
+      "anzeigename": "Rufus",
+      "herren": true,
+      "damen": false,
+      "passwort": "herren123",
+      "mannschaft": "herren",
+      "version": 0
+    },
+    {
+      "username": "lassemuth",
+      "anzeigename": "Lasse M.",
+      "herren": true,
+      "damen": false,
+      "passwort": "herren123",
+      "mannschaft": "herren",
+      "version": 0
+    },
+    {
+      "username": "dirkgrothusen",
+      "anzeigename": "Grobi",
+      "herren": true,
+      "damen": false,
+      "passwort": "herren123",
+      "mannschaft": "herren",
+      "version": 0
+    },
+    {
+      "username": "arndtvondrathen",
+      "anzeigename": "Arndt",
+      "herren": true,
+      "damen": false,
+      "passwort": "herren123",
+      "mannschaft": "herren",
+      "version": 0
+    },
+    {
+      "username": "peterclaussen",
+      "anzeigename": "Peter",
+      "herren": true,
+      "damen": false,
+      "passwort": "herren123",
+      "mannschaft": "herren",
+      "version": 0
+    },
+    {
+      "username": "alexwerner",
+      "anzeigename": "Alex",
+      "herren": true,
+      "damen": false,
+      "passwort": "herren123",
+      "mannschaft": "herren",
+      "version": 0
+    },
+    {
+      "username": "arneklinck",
+      "anzeigename": "Arne",
+      "herren": true,
+      "damen": false,
+      "passwort": "herren123",
+      "mannschaft": "herren",
+      "version": 0
+    },
+    {
+      "username": "siembielfeldt",
+      "anzeigename": "Siem",
+      "herren": true,
+      "damen": false,
+      "passwort": "herren123",
+      "mannschaft": "herren",
+      "version": 0
+    },
+    {
+      "username": "ericpetersen",
+      "anzeigename": "Eric",
+      "herren": true,
+      "damen": false,
+      "passwort": "herren123",
+      "mannschaft": "herren",
+      "version": 0
+    },
+    {
+      "username": "jesperwiekhorst",
+      "anzeigename": "Jesper",
+      "herren": true,
+      "damen": false,
+      "passwort": "herren123",
+      "mannschaft": "herren",
+      "version": 0
+    },
+    {
+      "username": "jesperhintmann",
+      "anzeigename": "Toefte",
+      "herren": true,
+      "damen": false,
+      "passwort": "herren123",
+      "mannschaft": "herren",
+      "version": 0
+    },
+    {
+      "username": "jonashipler",
+      "anzeigename": "Jonas",
+      "herren": true,
+      "damen": false,
+      "passwort": "herren123",
+      "mannschaft": "herren",
+      "version": 0
+    },
+    {
+      "username": "lasseahrens",
+      "anzeigename": "Lasse A.",
+      "herren": true,
+      "damen": false,
+      "passwort": "herren123",
+      "mannschaft": "herren",
+      "version": 0
+    },
+    {
+      "username": "lassewolpmann",
+      "anzeigename": "Lasse W.",
+      "herren": true,
+      "damen": false,
+      "passwort": "herren123",
+      "mannschaft": "herren",
+      "version": 0
+    },
+    {
+      "username": "laurensstahl",
+      "anzeigename": "Laurens",
+      "herren": true,
+      "damen": false,
+      "passwort": "herren123",
+      "mannschaft": "herren",
+      "version": 0
+    },
+    {
+      "username": "martinloeding",
+      "anzeigename": "Martin",
+      "herren": true,
+      "damen": false,
+      "passwort": "herren123",
+      "mannschaft": "herren",
+      "version": 0
+    },
+    {
+      "username": "tillschulz",
+      "anzeigename": "Till",
+      "herren": true,
+      "damen": false,
+      "passwort": "herren123",
+      "mannschaft": "herren",
+      "version": 0
+    },
+    {
+      "username": "tjorepeters",
+      "anzeigename": "Tjore",
+      "herren": true,
+      "damen": false,
+      "passwort": "herren123",
+      "mannschaft": "herren",
+      "version": 0
+    }
+  ]
+}
